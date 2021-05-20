@@ -1,6 +1,6 @@
 from display import *
 from draw import *
-from parser import *
+from myparser import *
 from matrix import *
 import math
 
@@ -10,6 +10,6 @@ edges = []
 polygons = []
 t = new_matrix()
 ident(t)
-csystems = [ t ]
+csystems = [ t ]#array of matrixes
 
 parse_file( 'script', edges, polygons, csystems, screen, color )
